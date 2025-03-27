@@ -5,6 +5,9 @@
     flex-direction: column;
     align-items: center;
     padding-top: 5rem;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .about-container h1 {
@@ -28,7 +31,7 @@
 }
 
 .collage img {
-    width: 95%; 
+    width: 83%; 
     height: auto;
     display: block;
     margin-bottom: 1rem;
@@ -38,7 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 80%;
     max-width: 1000px;
     margin-bottom: 5rem;
 }
@@ -59,7 +62,7 @@
 }
 
 .personal-image img {
-    width: 140rem;
+    width: 130rem;
     height: auto;
     max-width: 100%;
 }
@@ -71,13 +74,13 @@
     margin-left: 3rem;
 }
 
-.gallery-container {
+.photos-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
     gap: 20px;
     max-width: 1000px;
-    width:90%;
+    width:80%;
     margin: 0 auto;
     margin-bottom: 5rem;
 }
@@ -139,6 +142,103 @@
     border: 15px solid #f8f5f2;
     background-color: #f0ebe5;
 }
+
+.list {
+    margin-bottom: 10rem;
+}
+
+.year, h4 {
+    font-weight: bold;
+    font-family: "Archivo Black", serif;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    font-family: "Metrophobic", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.exhibition-title {
+    font-style: italic;
+}
+
+@media all and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+      }
+
+    .personal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .personal-text {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .personal-image {
+        margin-left: 0;
+        width: 70%;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+
+    .about-container h1 {
+        font-size: 2rem;
+    }
+
+    .collage img {
+        width: 100%;
+    }
+
+    .photos-container {
+        display: grid;
+        gap: 1rem;
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        scroll-snap-type: y mandatory;
+        overflow-y: auto;
+        max-height: 90vh;
+    }
+
+    .gallery-item {
+        width: 100%;
+        grid-column: auto !important;
+        grid-row: auto !important;
+        scroll-snap-align: start;
+      }
+    
+      .gallery-item img {
+        width: 100% !important;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .personal {
+        flex-wrap: wrap;
+      }
+    
+      .personal-text,
+      .personal-image {
+        width: 100%;
+        margin: 0;
+        padding: 1rem 0;
+      }
+}
+
 
 
 
