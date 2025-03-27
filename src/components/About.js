@@ -1,5 +1,6 @@
 import React from "react";
 import './About.css';
+import aboutImages from "./aboutImages";
 
 const About = () => {
     return(<div className="about-container">
@@ -16,36 +17,23 @@ const About = () => {
             <i>Le dessin a été ma plus grande passion depuis la maternelle. A la fac, je passais le plus clair de mon temps dans les ateliers de peinture. J'aime autant les plein-airs que les ateliers de vitynanka, cette technique ukrainienne ancestrale qui me tient particulièrement à coeur.</i>
             </div>
             <div className="personal-image">
-            <img src="/images/saiora-main.png" alt="Caramics"/>
+            <img src="/images/saiora-main.png" alt="Summer portrait"/>
             </div>
         </div>
-        <div className="gallery-container">
-            <div className="gallery-item item-1">
-            <img src="/images/young-dina.jpeg" alt="Dina" height="auto" width="300"/>
+        <div className="photos-container">
+                {aboutImages.map((image, index) => (
+                    <div key={index} className={`gallery-item item-${index + 1}`}>
+                        <img 
+                        src={image.src} 
+                        alt={image.alt || "Gallery Image"} 
+                        height="auto" 
+                        width="300" 
+                        loading="lazy"
+                        srcSet={`${image.src} 300w, ${image.src} 600w`}
+                        sizes="(max-width: 600px) 100vw, 300px"/>
+                    </div>
+                ))}
             </div>
-            <div className="gallery-item item-2">
-            <img src="/images/uzbekistan.png" alt="" height="auto" width="300"/>
-            </div>
-            <div className="gallery-item item-3">
-            <img src="/images/plein-air.png" alt="" height="auto" width="250"/>
-            </div>
-            <div className="gallery-item item-4">
-            <img src="/images/dina.jpeg" alt="lepka" height="auto" width="250"/> 
-            </div>
-            <div className="gallery-item item-5">
-            <img src="/images/noir-et-blanc.png" alt="" height="auto" width="300"/>
-            </div>
-            <div className="gallery-item item-6">
-            <img src="images/avec-etudiante.png" alt="" height="auto" width="300"/>
-            </div>
-            
-            <div className="gallery-item item-7">
-            <img src="/images/expo-1.png" alt="" height="auto" width="300"/>
-            </div>
-            <div className="gallery-item item-8">
-            <img src="/images/expo.png" alt="" height="auto" width="300"/>
-            </div>
-        </div>
     </div>
     )
 }
