@@ -1,0 +1,158 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #A47764;
+    position: relative;
+    padding-top: 10rem;
+    z-index: 0;
+}
+
+.home-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    position: relative;
+    z-index: 0;
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.block {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+}
+
+.block1 {
+    background-color: #3f0606;
+}
+
+.block2 {
+    background-color: #453e3b;
+    top: 100px;
+    height: 60px;
+    right: 0;
+}
+
+h1 {
+    /* font-family: "Metrophobic", serif;
+    font-weight: 700; */
+    font-size: 4rem;
+    color: #373a47;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+    text-align: end;
+}
+
+h2 {
+    /* font-family: "Metrophobic", serif; */
+    font-size: 1.5rem;
+    color: #373a47;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+    text-align: end;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #024d3d;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #013a2f;
+}
+
+@media all and (max-width: 800px) {
+    .home-container {
+        padding-top: 1.5rem;
+    }
+
+    .home-content {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .header-container {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .home-container {
+        padding: 1rem;
+    }
+
+    .home-content {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .header-container {
+        max-width: 95%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .home-container {
+        padding: 0.5rem;
+    }
+
+    .home-content {
+        padding: 0.5rem;
+        gap: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+  
+
+  
+
+
+
+ 
+  
+  
