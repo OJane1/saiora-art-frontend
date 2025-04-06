@@ -1,0 +1,146 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    background-color: #f8f9fa;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.contact h2 {
+    color: #373a47;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-icons a {
+    color: #373a47;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 2.5rem;
+}
+
+.contact-icons a:hover {
+    color: #A47764;
+}
+
+.contact-info {
+    text-align: center;
+    color: #373a47;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Footer specific styles */
+.footer {
+    width: 100%;
+    padding: 1rem;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20vw;
+}
+
+.footer-content a {
+    color: #373a47;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    size: 4rem;
+}
+
+.footer-content a:hover {
+    color: #024d3d;
+}
+
+.footer-content svg {
+    font-size: 1.7rem;
+}
+
+@media all and (max-width: 800px) {
+    .footer-content {
+        width: 30vw;
+    }
+
+    .footer-content svg {
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .footer-content {
+        width: 40vw;
+    }
+
+    .footer-content svg {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .footer-content {
+        width: 80vw;
+    }
+
+    .footer-content svg {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact, .footer {
+        padding: 1.5rem;
+    }
+
+    .contact h2, .footer h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-icons, .footer-content {
+        gap: 1.5rem;
+    }
+
+    .contact-icons a, .footer-content a {
+        font-size: 2rem;
+    }
+
+    .contact-info {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact, .footer {
+        padding: 1rem;
+    }
+
+    .contact h2, .footer h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-icons, .footer-content {
+        gap: 1rem;
+    }
+
+    .contact-icons a, .footer-content a {
+        font-size: 1.8rem;
+    }
+
+    .contact-info {
+        font-size: 0.9rem;
+    }
+}

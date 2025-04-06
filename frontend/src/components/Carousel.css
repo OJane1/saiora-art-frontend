@@ -1,0 +1,64 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Customize Bootstrap carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.7;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-indicators {
+    bottom: -30px;
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: #373a47;
+}
+
+.carousel-indicators button.active {
+    background-color: #A47764;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .carousel-container {
+        max-width: 90%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 8%;
+    }
+}
+
+@media (max-width: 450px) {
+    .carousel-container {
+        max-width: 95%;
+    }
+
+    .carousel-indicators button {
+        width: 8px;
+        height: 8px;
+    }
+} 

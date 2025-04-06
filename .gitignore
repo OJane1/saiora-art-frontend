@@ -1,0 +1,12 @@
+node_modules/
+.env
+.DS_Store
+build/
+*.log
+*.mp4
+frontend/public/images/*.mp4
+frontend/public/images/*.mov
+frontend/public/images/*.avi
+*.zip
+*.tar
+*.gz
