@@ -23,6 +23,9 @@ h2 {
 #page-wrap {
   text-align: center;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .bm-item {
@@ -170,6 +173,33 @@ button {
     margin-bottom: 5%;
   }
 
+  .cart-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #A47764;
+}
+
+.cart-badge.hidden {
+    display: none;
+}
+
   @media all and (max-width: 800px) {
     h1 {
       font-size: 3.5rem;
@@ -247,7 +277,6 @@ button {
     }
 }
 
-
 @media all and (max-width: 300px) {
   h1 {
     font-size: 1.8rem;
@@ -282,5 +311,7 @@ button {
     }
 }
   
+
+
 
 
