@@ -1,0 +1,111 @@
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+    z-index: 1001;
+}
+
+.bm-burger-bars {
+    background-color: #373a47;
+}
+
+.bm-burger-bars-hover {
+    background-color: #1a3a0a;
+}
+
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+    z-index: 1002;
+}
+
+.bm-cross {
+    background: #373a47;
+}
+
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.bm-menu {
+    background: #EFECE7;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+.bm-item-list {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.bm-item {
+    display: inline-block;
+    text-decoration: none;
+    color: #373a47;
+    padding: 0.8em;
+    transition: color 0.3s ease;
+}
+
+.bm-item:hover {
+    color: #1a3a0a;
+}
+
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+.menu-item {
+    display: inline-block;
+    color: #373a47;
+    margin-bottom: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-family: "Metrophobic", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.menu-item:hover {
+    color: #A47764;
+}
+
+/* Position the Contact component at the bottom */
+.bm-menu > div:last-child {
+    margin-top: auto%;
+    padding-bottom: 2rem;
+}
+
+@media all and (max-width: 800px) {
+    .bm-menu {
+        padding: 1.5em 1em 0;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .bm-menu {
+        padding: 1em 0.8em 0;
+    }
+}
+
+@media (max-width: 300px) {
+    .bm-menu {
+        padding: 0.8em 0.5em 0;
+    }
+}
